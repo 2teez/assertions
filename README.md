@@ -38,7 +38,7 @@
     Prints returned value of the function `asserts`. Returns None.
 
 
-### assert\_eq\_prnt(value1: Any, value2: Any) -> None
+### assert\_eq\_prnt(value1: Any, value2: Any, *, show=False) -> None
 
     Prints returned values of the function `assert_eq`. Returns None
 

@@ -47,6 +47,7 @@ def asserts_prnt(value: Any) -> None:
 
 
 def assert_eq_prnt(value1: Any, value2: Any) -> None:
+    '''Prints returned values of the function `assert_eq`. Returns None'''
     result = assert_eq(value1, value2)
     _print_result(result, values=[value1, value2])
 

@@ -1,6 +1,6 @@
 # Assertions
 
-### asserts(value: Any) -> bool
+## asserts(value: Any) -> bool
 
     Check if the value passed is True. it is diffrent to the core `assert`. 
     It returns True or False. No exception is returned.

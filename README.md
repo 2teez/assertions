@@ -19,8 +19,7 @@
 
 ### assert\_eq(value1: Any, value2: Any) -> bool
     
-    Gets two positional parameters. Check if the parameters
-    are the same type. 
+    Gets two positional parameters. Check if the parameters are the same type. 
     Then check if the parameters are the same. 
 
     '''
@@ -46,8 +45,7 @@
 
 ### \_print\_result(status: bool, *, values: list[Any] = [None], show=False) -> None
     
-    it prints out either True or False. It can also
-    `show` the reason, if the result is false. 
+    it prints out either True or False. It can also `show` the reason, if the result is false. 
     _print_result is a private function in this package.
-    it takes; a bool, a list and a bool variable. It returns None.
+    It takes; a bool, a list and a bool variable. It returns None.
     

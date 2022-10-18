@@ -6,8 +6,8 @@
     it is diffrent to the core `assert`. It returns
     True or False. No exception is returned.
     
+    
     '''
-
     >>> asserts(True)
     True
 
@@ -15,7 +15,6 @@
 
     >>> asserts([])
     True
-
     '''
 
 
@@ -44,7 +43,7 @@
 ### assert\_eq\_prnt(value1: Any, value2: Any) -> None
 
     Prints returned values of the function `assert_eq`. Returns None
-    
+
 
 ### \_print\_result(status: bool, *, values: list[Any] = [None], show=False) -> None
     

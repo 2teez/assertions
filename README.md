@@ -2,12 +2,11 @@
 
 ### asserts(value: Any) -> bool
 
-    Check if the value passed is True.
-    it is diffrent to the core `assert`. It returns
-    True or False. No exception is returned.
+    Check if the value passed is True. it is diffrent to the core `assert`. 
+    It returns True or False. No exception is returned.
     
-    
-    '''
+    E.g:
+    ```
     >>> asserts(True)
     True
 
@@ -15,7 +14,7 @@
 
     >>> asserts([])
     True
-    '''
+    ```
 
 
 ### assert\_eq(value1: Any, value2: Any) -> bool

@@ -1,6 +1,6 @@
 # Assertions
 
-#### asserts(value: Any) -> bool
+#### _asserts(value: Any) -> bool_
 
 Check if the value passed is True. it is diffrent to the core `assert`. 
 It returns True or False. No exception is returned.
@@ -15,7 +15,7 @@ It returns True or False. No exception is returned.
     
 
 
-#### assert\_eq(value1: Any, value2: Any) -> bool
+#### _assert\_eq(value1: Any, value2: Any) -> bool_
     
 Gets two positional parameters. Check if the parameters are the same type. 
 Then check if the parameters are the same. 
@@ -27,17 +27,17 @@ Then check if the parameters are the same.
     True
 
 
-#### asserts\_prnt(value: Any) -> None
+#### _asserts\_prnt(value: Any) -> None_
 
 Prints returned value of the function `asserts`. Returns None.
 
 
-#### assert\_eq\_prnt(value1: Any, value2: Any, *, show=False) -> None
+#### _assert\_eq\_prnt(value1: Any, value2: Any, *, show=False) -> None_
 
 Prints returned values of the function `assert_eq`. Returns None
 
 
-#### \_print\_result(status: bool, *, values: list[Any] = [None], show=False) -> None
+#### _\_print\_result(status: bool, *, values: list[Any] = [None], show=False) -> None_
     
 It prints out either True or False. It can also `show` the reason, if the result is false. 
 _print_result is a private function in this package.

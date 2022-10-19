@@ -1,6 +1,4 @@
-# NAME
-
-## Assertions
+# Assertions
 
 ## Description:
 

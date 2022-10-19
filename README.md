@@ -8,7 +8,7 @@ It returns True or False. No exception is returned.
     >>> asserts(True)
     True
 
-    Below test is expected to Fail.
+Below test is expected to Fail.
 
     >>> asserts([])
     True

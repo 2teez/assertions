@@ -2,7 +2,6 @@
 
 import assertions
 
-
 def main() -> None:
     print(assertions.asserts([]))
     print(assertions.assert_eq([1, 3], [1, 3]))

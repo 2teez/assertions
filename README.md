@@ -38,12 +38,12 @@ Then check if the parameters are the same.
 Prints returned value of the function `asserts`. Returns None.
 
 
-#### _assert\_eq\_prnt(value1: Any, value2: Any, *, show=False) -> None_
+4. #### _assert\_eq\_prnt(value1: Any, value2: Any, *, show=False) -> None_
 
 Prints returned values of the function `assert_eq`. Returns None
 
 
-4. #### _\_print\_result(status: bool, *, values: list[Any] = [None], show=False) -> None_
+5. #### _\_print\_result(status: bool, *, values: list[Any] = [None], show=False) -> None_
 
 It prints out either True or False. It can also `show` the reason, if the result is false.
 _print_result is a private function in this package.

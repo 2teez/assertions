@@ -4,8 +4,9 @@
 
 A simple assertion using python. It tests and returns either true or false for the condition in consideration.
 
+## Functions:
 
-#### _asserts(value: Any) -> bool_
+1. #### _asserts(value: Any) -> bool_
 
 Check if the value passed is True. it is diffrent to the core `assert`.
 It returns True or False. No exception is returned.
@@ -20,7 +21,7 @@ Below test is expected to Fail.
 
 
 
-#### _assert\_eq(value1: Any, value2: Any) -> bool_
+2. #### _assert\_eq(value1: Any, value2: Any) -> bool_
 
 Gets two positional parameters. Check if the parameters are the same type.
 Then check if the parameters are the same.
@@ -32,17 +33,17 @@ Then check if the parameters are the same.
     True
 
 
-#### _asserts\_prnt(value: Any) -> None_
+3. #### _asserts\_prnt(value: Any) -> None_
 
 Prints returned value of the function `asserts`. Returns None.
 
 
-#### _assert\_eq\_prnt(value1: Any, value2: Any, *, show=False) -> None_
+4. #### _assert\_eq\_prnt(value1: Any, value2: Any, *, show=False) -> None_
 
 Prints returned values of the function `assert_eq`. Returns None
 
 
-#### _\_print\_result(status: bool, *, values: list[Any] = [None], show=False) -> None_
+5. #### _\_print\_result(status: bool, *, values: list[Any] = [None], show=False) -> None_
 
 It prints out either True or False. It can also `show` the reason, if the result is false.
 _print_result is a private function in this package.

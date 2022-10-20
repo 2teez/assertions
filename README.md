@@ -4,6 +4,7 @@
 
 A simple assertion using python. It tests and returns either true or false for the condition in consideration.
 
+## Functions:
 
 #### _asserts(value: Any) -> bool_
 

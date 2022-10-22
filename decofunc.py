@@ -18,3 +18,18 @@ def printer(show: bool = False):
             return result
         return wrapper
     return prints
+
+
+def deprecated(reason: str = 'Deprecated'):
+    '''A decorator function to prints shows that a function is deprecated and 
+    shows the reason.
+    '''
+    def prints(func):
+        def wrapper(*args, **kwargs):
+            result = func(args, kwargs)
+            print(f'{func.__name__}: {reason}')
+            wrapper.__doc__ = func.__doc__
+            wrapper.__name__ = str(func.__name__)
+            return result
+        return wrapper
+    return prints

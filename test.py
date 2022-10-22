@@ -2,6 +2,7 @@
 
 from assertions import asserts, asserts_prnt, assert_eq, assert_eq_prnt, _print_result
 
+
 def main() -> None:
     print(asserts([]))
     print(assert_eq([1, 3], [1, 3]))
@@ -9,6 +10,9 @@ def main() -> None:
     asserts_prnt(0)
     assert_eq_prnt("tim", "Tim", show=True)
     _print_result(False, values=[23, list(range(5))], show=True)
+    print('Testing after decoration add: ')
+    assert_eq([1, 3], [1, 3])
+    assert_eq((), list(range(5)))
 
 
 if __name__ == '__main__':

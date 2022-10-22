@@ -2,6 +2,21 @@
 
 from typing import Any
 
+def printer(show: bool=False):
+    def prints(func):
+        def wrapper(*args, **kwargs):
+            result = func(*args)
+            expected, got = args
+            if result == show:
+                print(result)
+            else:
+                print(f'{result} Reason: => ' f'expected: {expected}, got: {got}')
+            wrapper.__doc__ = func.__doc__
+            wrapper.__name__ = str(func.__name__)
+            return result
+        return wrapper
+    return prints
+
 
 def asserts(value: Any) -> bool:
     '''Check if the value passed is True.
@@ -23,11 +38,12 @@ def asserts(value: Any) -> bool:
         return False
 
 
+@printer(show=True)
 def assert_eq(value1: Any, value2: Any) -> bool:
     '''
     Gets two positional parameters. Check if the parameters
-    are the same type. 
-    Then check if the parameters are the same. 
+    are the same type.
+    Then check if the parameters are the same.
 
     >>> assert_eq("Lagos", "new yoke")
     False
@@ -55,7 +71,7 @@ def assert_eq_prnt(value1: Any, value2: Any, *, show: bool = False) -> None:
 def _print_result(status: bool, *, values: list[Any] = [None], show=False) -> None:
     '''
     it prints out either True or False. It can also
-    `show` the reason, if the result is false. 
+    `show` the reason, if the result is false.
     _print_result is a private function in this package.
     it takes; a bool, a list and a bool variable. It returns None.
     '''

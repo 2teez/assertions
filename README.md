@@ -49,3 +49,8 @@ It prints out either True or False. It can also `show` the reason, if the result
 _print_result is a private function in this package.
 It takes; a bool, a list and a bool variable. It returns None.
 
+6. #### _printer(show: bool=False)_
+
+A decorator to prints assert_eq. This enables assert_eq to prints, without using the print function.
+It doesn't only prints the result but shows the result expected and what is gotten, if the result is `false`.
+    

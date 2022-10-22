@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from typing import Any
-from prints_deco import printer
+from decofunc import printer, deprecated
 
 
 def asserts(value: Any) -> bool:
@@ -48,6 +48,7 @@ def asserts_prnt(value: Any) -> None:
     print(asserts(value))
 
 
+@deprecated(message='Deprecated. Use `assert_eq`, it does what you expects.')
 def assert_eq_prnt(value1: Any, value2: Any, *, show: bool = False) -> None:
     '''Prints returned values of the function `assert_eq`. Returns None'''
     result = assert_eq(value1, value2)

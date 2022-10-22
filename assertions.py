@@ -1,21 +1,7 @@
 #!/usr/bin/env python3
 
 from typing import Any
-
-def printer(show: bool=False):
-    def prints(func):
-        def wrapper(*args, **kwargs):
-            result = func(*args)
-            expected, got = args
-            if result == show:
-                print(result)
-            else:
-                print(f'{result} Reason: => ' f'expected: {expected}, got: {got}')
-            wrapper.__doc__ = func.__doc__
-            wrapper.__name__ = str(func.__name__)
-            return result
-        return wrapper
-    return prints
+from prints_deco import printer
 
 
 def asserts(value: Any) -> bool:
